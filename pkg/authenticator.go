@@ -26,7 +26,6 @@ func GetAuthToken(registry DockerRegistry) (*string, *string) {
 		RegistryIds: []*string{aws.String(registryId)},
 	}
 
-	//895462685128.dkr.ecr.us-west-2.amazonaws.com
 	awsConfig := aws.Config{
 		Region: aws.String(registryUrlSplit[3]),
 	}
